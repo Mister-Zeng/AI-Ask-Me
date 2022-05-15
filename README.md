@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mister-Zeng/ai-ask-me]
-- Live Site URL: [aiaskme.netlify.app]
+- Live Site URL: [https://aiaskme.netlify.app/]
 ## My process
 
 ### Built with
