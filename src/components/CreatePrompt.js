@@ -3,7 +3,7 @@ import Styles from './Styles.css'
 
 export default function CreatePrompt() {
     const [responseInput, setResponseInput] = useState("");
-    const [result, setResult] = useState("");
+    const [result, setResult] = useState(null);
     const [list, setList] = useState([
         {
             id: 101,
@@ -35,7 +35,7 @@ export default function CreatePrompt() {
                 })
                 if (response.ok) {
                     const jsonResponse = await response.json();
-                    setResult(jsonResponse.choices[0].text)
+                    setResult(await jsonResponse.choices[0].text)
                     setResponseInput(responseInput)
                 }
             } catch (error) {
@@ -45,7 +45,7 @@ export default function CreatePrompt() {
         getData()
     }
 
-    const addItem = async () => {
+    const addItem = () => {
         if (responseInput !== '') {
             const promptObj = {
                 id: Math.random(),
@@ -60,6 +60,7 @@ export default function CreatePrompt() {
         }
     }
 
+
     const deleteItem = (key) => {
         const arrayList = [...list]
 
@@ -70,7 +71,7 @@ export default function CreatePrompt() {
 
     return (
         <div>
-            <div className="ui container heading-container">
+            <main className="ui container heading-container">
                 <h1 id="heading">Fun With AI</h1>
                 <p id="command-description">Hello, my name is GPT-3. Ask me to do something.</p>
                 <div className="ui form">
@@ -90,7 +91,7 @@ export default function CreatePrompt() {
                         >Submit</button>
                     </form>
                 </div>
-            </div>
+            </main>
             <div className="ui container subheading-container">
                 <h2 id="response-subheading">Responses</h2>
             </div>
@@ -122,7 +123,7 @@ export default function CreatePrompt() {
                             </div>
                         </div>
                     )
-                })}
+                }).reverse()}
             </div>
         </div >
     )
