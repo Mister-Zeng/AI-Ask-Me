@@ -1,6 +1,64 @@
-# Getting Started with Create React App
+# AI Ask Me App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the solution to the AI Ask Me App 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [How to run this app](#how-to-run-this-app)
+- [Author](#author)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Enter the prompt to ask the artificial intelligence what to do
+- Create each a container that display the entered prompt and response 
+- Container should be displayed in the order from new to old
+- Able to delete the container
+
+### Screenshot
+
+![](https://github.com/Mister-Zeng/Portfolio-Website/blob/main/images/ip-address.png?raw=true)
+
+### Links
+
+- Solution URL: [https://github.com/Mister-Zeng/IP-Address-Tracker]
+- Live Site URL: [https://mister-zeng.github.io/IP-Address-Tracker/]
+## My process
+
+### Built with
+
+- HTML5 
+- CSS 
+- Semantic UI
+- React.js
+- Node.js
+- Fetching, Storing, Deleting API locally
+
+### What I learned
+
+This app is completed on 5/14/2022. I started learning React just a couple week before I made this app. I decided that instead of making a static site with just HTML, CSS, and JavaScript, I will take this opportunity to test my skill on what I have learned so far with React. It was a little challenging for me, but I was able to learn the different tools onhand and translate it into this project. I was able to implement function component along with useState. Fetching api, stored it and rendered it into the element. Each container that was being displayed is added on as a new element and able to delete them as well. 
+
+### Continued development
+
+In my continued development, I want to dive deeper into learning better on creating react component indivdually. I acknowldge that I am still having a little trouble with it, but in time, I know I will understand it. 
+
+### How to run this app. 
+
+In this repository, it contains a .env.example file. Create a .env file. In the .env.example file, it contain information format on how your .env file should look like. You need to enter your api key from [OpenAI](https://openai.com/) in order to fetch the data to run this app.
 
 ## Available Scripts
 
@@ -39,32 +97,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Jason Zeng](https://mister-zeng.github.io/Portfolio-Website/)
+- Twitter - [@misterzeng](https://www.twitter.com/misterzeng)
+- API - [OpenAI](https://openai.com/)

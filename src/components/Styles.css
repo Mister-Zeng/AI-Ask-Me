@@ -1,0 +1,82 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #005187;
+  background-image: linear-gradient(0deg, #005187 0%, #5fdaf2 24%, #ffffff 49%, #5fdaf2 75%, #005187 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.heading-container {
+  margin-top: 50px;
+}
+
+#submit-button {
+  margin-top: 10px;
+}
+
+.new-response-container {
+  margin-top: 80px;
+}
+
+.info-container {
+  background-color: rgb(81, 175, 216);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.prompt-container {
+  display: flex;
+  gap: 35px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.response-container {
+  display: flex;
+  gap: 20px;
+}
+
+#prompt-subheading {
+  font-size: 20px;
+  margin: 30px 0 15px 0;
+}
+
+#response-subheading {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#heading {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-style: italic;
+}
+
+#command-description {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.response-title {
+  margin: 0;
+}
+
+#response-result {
+  font-size: 15px;
+}
+
+#prompt-input {
+  font-size: 15px;
+}
+
+.subheading-container {
+  position: relative;
+  top: 65px;
+}
+
+.delete-button {
+  position: relative;
+  width: 50px;
+}
