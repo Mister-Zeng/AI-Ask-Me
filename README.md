@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mister-Zeng/ai-ask-me]
-- Live Site URL: [https://mister-zeng.github.io/IP-Address-Tracker/]
+- Live Site URL: [aiaskme.netlify.app]
 ## My process
 
 ### Built with
