@@ -31,11 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/Mister-Zeng/Portfolio-Website/blob/main/images/ip-address.png?raw=true)
+![](https://github.com/Mister-Zeng/ai-ask-me/blob/main/public/demo.gif?raw=true)
 
 ### Links
 
-- Solution URL: [https://github.com/Mister-Zeng/IP-Address-Tracker]
+- Solution URL: [https://github.com/Mister-Zeng/ai-ask-me]
 - Live Site URL: [https://mister-zeng.github.io/IP-Address-Tracker/]
 ## My process
 
