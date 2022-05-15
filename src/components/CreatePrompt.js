@@ -8,7 +8,7 @@ export default function CreatePrompt() {
         {
             id: 101,
             inputPrompt: "What is on your mind?",
-            value: "Excited to get the opportunity to interview with Shopify!",
+            value: "You are on my mind.",
         }
     ]);
 
