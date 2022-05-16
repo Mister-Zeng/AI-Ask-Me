@@ -4,7 +4,6 @@ import Styles from './Styles.css'
 
 export default function CreatePrompt() {
     const [responseInput, setResponseInput] = useState("");
-    const [result, setResult] = useState("");
     const [list, setList] = useState([
         {
             id: uuidV4(),
@@ -19,8 +18,8 @@ export default function CreatePrompt() {
         const getData = async () => {
             const data = {
                 prompt: responseInput,
-                temperature: 0.5,
-                max_tokens: 64,
+                temperature: 0.8,
+                max_tokens: 65,
                 top_p: 1.0,
                 frequency_penalty: 0.0,
                 presence_penalty: 0,
@@ -30,14 +29,21 @@ export default function CreatePrompt() {
                     method: 'POST',
                     headers: {
                         "Content-Type": "application/json",
-                        Authorization: `Bearer ${process.env.REACT_APP_USER_KEY}`
+                        Authorization: `Bearer ${process.env.REACT_APP_USER_KEY}` // opens .env file retrieve api key
                     },
                     body: JSON.stringify(data),
                 })
                 if (response.ok) {
                     const jsonResponse = await response.json();
-                    setResult(jsonResponse.choices[0].text)
-                    setResponseInput(responseInput)
+
+                    const promptObj = {
+                        id: uuidV4(),
+                        inputPrompt: responseInput,            // save current prompt input
+                        value: jsonResponse.choices[0].text,   // save resolved response value
+                    }
+
+                    setList(list => [...list, promptObj]); // enqueue list state update
+                    setResponseInput(''); // clear out prompt value
                 }
             } catch (error) {
                 console.log(error);
@@ -46,28 +52,13 @@ export default function CreatePrompt() {
         getData()
     }
 
-    const addItem = () => {
-        if (responseInput !== '') {
-            const promptObj = {
-                id: uuidV4(),
-                inputPrompt: responseInput,
-                value: result,
-            }
-
-            const arrayList = [...list];
-            arrayList.push(promptObj);
-            setList(arrayList);
-            setResponseInput('');
-        }
-    }
-
-
+    // filter and delete component if id dont match
     const deleteItem = (key) => {
-        const arrayList = [...list]
+        const arrayList = [...list] //spread out list and put it in array
 
-        const updateList = arrayList.filter(item => item.id !== key);
+        const updateList = arrayList.filter(item => item.id !== key); //update list after arrayList is filtered
 
-        setList(updateList);
+        setList(updateList); //update list state with updateList
     }
 
     return (
@@ -88,7 +79,7 @@ export default function CreatePrompt() {
                         <button
                             className="ui button blue right floated"
                             id="submit-button"
-                            onClick={addItem}
+                            type="submitß"
                         >Submit</button>
                     </form>
                 </div>
