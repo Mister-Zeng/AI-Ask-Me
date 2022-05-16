@@ -22,12 +22,13 @@ This is the solution to the AI Ask Me App
 
 Users should be able to:
 
+- A form for entering text prompts
+- Submitting the form sends the prompt to the OpenAI API
+- Create a container that display the entered prompt and the result response 
+- Results are displayed in a list, sorted from newest to oldest
+- Able to delete the container
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Enter the prompt to ask the artificial intelligence what to do
-- Create each a container that display the entered prompt and response 
-- Container should be displayed in the order from new to old
-- Able to delete the container
 
 ### Screenshot
 
@@ -50,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-This app is completed on 5/14/2022. I started learning React just a couple week before I made this app. I decided that instead of making a static site with just HTML, CSS, and JavaScript, I will take this opportunity to test my skill on what I have learned so far with React. It was a little challenging for me, but I was able to learn the different tools onhand and translate it into this project. I was able to implement function component along with useState. Fetching api, stored it and rendered it into the element. Each container that was being displayed is added on as a new element and able to delete them as well. 
+This app is completed on 5/14/2022. I started learning React just a couple week before I made this app. I decided that instead of making a static site with just HTML, CSS, and JavaScript, I will take this opportunity to test my skill on what I have learned so far with React. It was a little challenging for me, but I was able to learn the different tools onhand and translate it into this project. I was able to implement function component along with useState. Fetching api, stored it and rendered it into the element. Each container that was being displayed is added on as a new element. Giving each array an id created from uuid package and user will able to delete them as well. 
 
 ### Continued development
 
