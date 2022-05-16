@@ -3,7 +3,7 @@ import Styles from './Styles.css'
 
 export default function CreatePrompt() {
     const [responseInput, setResponseInput] = useState("");
-    const [result, setResult] = useState(null);
+    const [result, setResult] = useState("");
     const [list, setList] = useState([
         {
             id: 101,
@@ -87,7 +87,7 @@ export default function CreatePrompt() {
                         <button
                             className="ui button blue right floated"
                             id="submit-button"
-                            onClick={addItem}
+                            onSubmit={addItem}
                         >Submit</button>
                     </form>
                 </div>
@@ -105,7 +105,7 @@ export default function CreatePrompt() {
                             <div>
                                 <button
                                     className="ui right floated button grey mini delete-button"
-                                    onClick={() => deleteItem(item.id)}
+                                    onSubmit={() => deleteItem(item.id)}
                                 >X
                                 </button>
                             </div>
