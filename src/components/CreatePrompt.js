@@ -35,7 +35,7 @@ export default function CreatePrompt() {
                 })
                 if (response.ok) {
                     const jsonResponse = await response.json();
-                    setResult(await jsonResponse.choices[0].text)
+                    setResult(jsonResponse.choices[0].text)
                     setResponseInput(responseInput)
                 }
             } catch (error) {
