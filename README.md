@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-This app is completed on 5/14/2022. I started learning React just a couple week before I made this app. I decided that instead of making a static site with just HTML, CSS, and JavaScript, I will take this opportunity to test my skill on what I have learned so far with React. It was a little challenging for me, but I was able to learn the different tools onhand and translate it into this project. I was able to implement function component along with useState. Fetching api, stored it and rendered it into the element. Each container that was being displayed is added on as a new element. Giving each array an id created from uuid package and user will able to delete them as well. 
+This app is completed on 5/15/2022. I started learning React just a couple week before I made this app. I decided that instead of making a static site with just HTML, CSS, and JavaScript, I will take this opportunity to test my skill on what I have learned so far with React. It was a little challenging for me, but I was able to learn the different tools onhand and translate it into this project. I was able to implement function component along with useState. Fetching api, stored it and rendered it into the element. Each container that was being displayed is added on as a new element. Giving each array an id created from uuid package and user will able to delete them as well. 
 
 ### Continued development
 

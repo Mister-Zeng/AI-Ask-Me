@@ -62,8 +62,8 @@ export default function CreatePrompt() {
     }
 
     return (
-        <div>
-            <main className="ui container heading-container">
+        <main>
+            <section className="ui container heading-container">
                 <h1 id="heading">Fun With AI</h1>
                 <p id="command-description">Hello, my name is GPT-3. Ask me to do something.</p>
                 <div className="ui form">
@@ -83,24 +83,22 @@ export default function CreatePrompt() {
                         >Submit</button>
                     </form>
                 </div>
-            </main>
-            <div className="ui container subheading-container">
+            </section>
+            <section className="ui container subheading-container">
                 <h2 id="response-subheading">Responses</h2>
-            </div>
-            <div>
+            </section>
+            <section>
                 {list.map(item => {
                     return (
                         <div
                             className="ui container new-response-container"
                             key={item.id}
                         >
-                            <div>
-                                <button
-                                    className="ui right floated button grey mini delete-button"
-                                    onClick={() => deleteItem(item.id)}
-                                >X
-                                </button>
-                            </div>
+                            <button
+                                className="ui right floated button grey mini delete-button"
+                                onClick={() => deleteItem(item.id)}
+                            >X
+                            </button>
                             <div className="info-container">
                                 <div className="prompt-container">
                                     <h3 className="response-title">Prompt:</h3>
@@ -116,7 +114,7 @@ export default function CreatePrompt() {
                         </div>
                     )
                 }).reverse()}
-            </div>
-        </div >
+            </section>
+        </main >
     )
 }
