@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidV4 } from 'uuid';
 import Styles from './Styles.css'
 
 export default function CreatePrompt() {
@@ -6,7 +7,7 @@ export default function CreatePrompt() {
     const [result, setResult] = useState("");
     const [list, setList] = useState([
         {
-            id: 101,
+            id: uuidV4(),
             inputPrompt: "What is on your mind?",
             value: "You are on my mind.",
         }
@@ -48,7 +49,7 @@ export default function CreatePrompt() {
     const addItem = () => {
         if (responseInput !== '') {
             const promptObj = {
-                id: Math.random(),
+                id: uuidV4(),
                 inputPrompt: responseInput,
                 value: result,
             }
@@ -105,7 +106,7 @@ export default function CreatePrompt() {
                             <div>
                                 <button
                                     className="ui right floated button grey mini delete-button"
-                                    onSubmit={() => deleteItem(item.id)}
+                                    onClick={() => deleteItem(item.id)}
                                 >X
                                 </button>
                             </div>
