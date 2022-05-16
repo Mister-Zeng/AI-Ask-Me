@@ -87,7 +87,7 @@ export default function CreatePrompt() {
                         <button
                             className="ui button blue right floated"
                             id="submit-button"
-                            onSubmit={addItem}
+                            onClick={addItem}
                         >Submit</button>
                     </form>
                 </div>
