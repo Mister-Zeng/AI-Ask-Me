@@ -55,7 +55,7 @@ This app is completed on 5/15/2022. I started learning React just a couple week 
 
 ### Continued development
 
-In my continued development, I want to dive deeper into learning better on creating react component indivdually. I acknowldge that I am still having a little trouble with it, but in time, I know I will understand it. 
+In my continued development, I want to dive deeper into learning better on creating react component indivdually. I want to create a web app where I will be able to implement many different components in one.
 
 ### How to run this app. 
 
