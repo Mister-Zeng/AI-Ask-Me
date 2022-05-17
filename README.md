@@ -57,13 +57,13 @@ This app is completed on 5/15/2022. I started learning React just a couple week 
 
 In my continued development, I want to dive deeper into learning better on creating react component indivdually. I want to create a web app where I will be able to implement many different components in one.
 
+## Available Scripts
+
 ### How to run this app. 
 
 In this repository, it contains a .env.example file. Create a .env file. In the .env.example file, it contain information format on how your .env file should look like. You need to enter your api key from [OpenAI](https://openai.com/) in order to fetch the data to run this app.
 
-## Available Scripts
-
-In the project directory, you can run:
+### In the project directory, you can run:
 
 ### `npm start`
 
